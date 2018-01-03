@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">极简生活</string>
+
+    <!--memo-->
+    <string name="memo_dia_title"> 请输入添加的备忘 </string>
+    <string name="memo_dia_positive_btn"> 确定 </string>
+
+    <!--schedule-->
+    <string name="sch_dia_title"> 请输入新的任务单 </string>
+    <string name="sch_dia_positive_btn"> 确定 </string>
+</resources>

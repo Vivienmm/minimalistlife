@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_marginTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/cardTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/schedule_card_title"
+                tools:text="代办事项" />
+
+            <TextView
+                android:id="@+id/dateHintTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardTitleTv"
+                android:drawableLeft="@mipmap/start"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:text="开始时间:  "
+                android:textSize="@dimen/schedule_card_date" />
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardTitleTv"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/dateHintTv"
+                android:textSize="@dimen/schedule_card_date"
+                tools:text="20161212" />
+
+            <TextView
+                android:id="@+id/hintTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateTv"
+                android:drawableLeft="@mipmap/progress"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/schedule_card_date"
+                android:text="当前进度:" />
+
+            <com.su.vivienmm.minimalist.view.HorizontalProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hintTv"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/hintTv" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

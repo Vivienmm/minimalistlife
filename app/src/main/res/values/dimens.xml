@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="memo_dig_title">14sp</dimen>
+    <dimen name="memo_dig_content">15sp</dimen>
+    <dimen name="schedule_card_title">16sp</dimen>
+    <dimen name="schedule_card_date">14sp</dimen>
+</resources>
